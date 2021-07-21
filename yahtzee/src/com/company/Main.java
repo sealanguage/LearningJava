@@ -1,24 +1,25 @@
 package com.company;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Cup myCup = new Cup();
-        Scanner scanner = new Scanner(System.in);
-        String input;
+        Yahtzee game = new Yahtzee();
+        game.play();
 
-        myCup.roll();
-//        System.out.println(myCup.displayCup());
-        System.out.println("Select the dice do you want to reroll (1-5");3
-        input = scanner.nextLine();
+//        Player will = newPlayer( name "Will");
+//        System.out.println(will.cup.displayCup());
+//        System.out.println(will.cup.updateScore());
+//        System.out.println(will.score);
+//        will.cup.roll();
+//        System.out.println(will.cup.displayCup());
+//        System.out.println(will.cup.updateScore());
+//        System.out.println(will.score);
 
-        myCup.roll(myCup.parseSelections(input));
-        System.out.println(myCup.displayCup());
-        
-//        myCup.roll( selection 3);
 
     }
 }

@@ -36,7 +36,7 @@ public class Cup {
     }
 
     public List<Integer> parseSelections(String input) {
-        String[] inputArr = input.split( regex ' ');  // 1 2 3
+        String[] inputArr = input.split( regex " ");  // 1 2 3
 //        System.out.println(inputArr.length);
         List<Integer> selections = new ArrayList<>();
         for (String number : inputArr) {
