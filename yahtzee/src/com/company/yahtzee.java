@@ -32,6 +32,8 @@ public class Yahtzee {
         }
 
         System.out.println(player.cup.displayCup());
+        System.out.println(player.updateScore());
+
     }
 
 
