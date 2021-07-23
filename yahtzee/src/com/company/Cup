@@ -21,7 +21,7 @@ public class Cup {
         dice.get(selection).roll();
     }
 
-    public void roll(List<int> selections) {
+    public void roll(List<Integer> selections) {
         for (int selection : selections) {
             roll(selection);
         }
