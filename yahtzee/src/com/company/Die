@@ -7,4 +7,16 @@ public class Die {
     pubic Die() {
         numberOfSides = 6;
     }
+     public Die(int numberOfSides) {
+            this.numberOfSides = numberOfSides;
+        }
+        // default constructor
+        public int getFaceUpValue() {
+            return faceUpValue;
+        }
+
+        public int roll() {
+            faceUpValue = (int) ((Math.random() * numberOfSides) +1);
+            return faceUpValue;
+        }
 }

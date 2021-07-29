@@ -25,19 +25,40 @@ public class Main {
         }
 
         boolean isLarger = newTotal > total;
-        System.out.println(isLarger ? "Number is higher" : "Number is lower");
         System.out.println(die1.faceUpValue + " + " + die2.faceUpValue + " = " + (newTotal) );
+        System.out.println(isLarger ? "Number is higher" : "Number is lower");
         boolean didWin = false;
-        if (input == "h") {  // guessed higher
-            if (isLarger) {
-                didWin = true;
+        if (input == "h") {
+            // guessed higher
+            if (isLarger){
+                // you win
+                System.out.printf("Number is higher you win");
+            } else {
+                // you lose
+                System.out.printf("Number is lower you lose");
             }
-        } else {  //  guessed lower
-            if (!isLarger) {
-                didWin = true;
+        } else {
+            // guessed lower
+            if (isLarger) {
+                // you lose
+                System.out.printf("Number is higher you lose");
+            } else {
+                // you win
+                System.out.printf("Number is lower you win");
             }
         }
-        System.out.printf(didWin ? "You win!" : "You lose.");
+
+
+//        if (input == "h") {  // guessed higher
+//            if (isLarger) {
+//                didWin = true;
+//            }
+//        } else {  //  guessed lower
+//            if (!isLarger) {
+//                didWin = true;
+//            }
+//        }
+//        System.out.println(didWin ? "you win!" : "you lose/lose.");
 
 
         scanner.close();
