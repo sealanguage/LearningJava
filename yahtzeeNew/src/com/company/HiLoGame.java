@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class HiLoGame {
 //    public int aNumber = 1;
 
-    public static void main(String[] args) {
+    public static void play() {
         // write your code here
         Scanner scanner = new Scanner(System.in);
         Die die1 = new Die();
