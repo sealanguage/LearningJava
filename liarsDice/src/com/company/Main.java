@@ -45,6 +45,13 @@ public class Main {
 //        System.out.println("Hello " + last + ", " + input + " " + last);
 
 
+        // create bidNumberOfDice and bidFaceUpValue variables
+        // currentBid is numberOfDice / faceUpValue
+        // if bidNumberOfDice > numberOfDice or bidFaceUpValue > faceUpValue
+        // bid is valid and can be accepted as currentBid
+        // pass bidNumberOfDice to numberOfDice and bidFaceUpValue to faceUpValue
+        // else
+        // bid is not vaild, ask player to bid again
 
 
 
