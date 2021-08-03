@@ -1,14 +1,26 @@
 package com.company;
 
 
-public class Player {
-//    public String name;
-//    public Cup cup = new Cup();
-//
-//    public Player(String name) {
-//        this.name = name;
-//        System.out.println("What is your name?");
-//    }
+import java.util.Scanner;
 
+public class Player {
+    public String playerName;
+    public Cup cup = new Cup();
+    Scanner scanner = new Scanner(System.in);
+
+    public Player(String playerName) {
+        this.playerName = playerName;
+        System.out.println("What is your name?");
+    }
+
+//    Cup myCup = new Cup();
+//        myCup.roll();
+//
+        public void Cup() {
+            Cup myCup = new Cup();
+            myCup.roll();
+        }
+
+//    System.out.println(playerName + "'s roll is:  " + myCup.displayCup());
 
 }

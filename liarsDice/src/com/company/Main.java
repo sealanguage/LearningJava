@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        Cup cup = new Cup();
+//        Cup cup = new Cup();
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is your name?");
         String playerName = scanner.nextLine();
@@ -17,9 +17,9 @@ public class Main {
 //            this.name = name;
 //        }
 
-        Cup myCup = new Cup();
-        myCup.roll();
-        System.out.println(playerName + "'s roll is:  " + myCup.displayCup());
+//        Cup myCup = new Cup();
+//        myCup.roll();
+
 
         int diceQuantity = 0;
         int faceUpValue = 0;
@@ -43,16 +43,18 @@ public class Main {
 
         if (playerFaceUpValueBid > faceUpValue && playerDiceQuantityBid > diceQuantity) {
             System.out.println("Bid is valid");
-            faceUpValue = playerFaceUpValueBid;
+            // make valid bid become current faceUpValue and diceQuantity
             diceQuantity = playerDiceQuantityBid;
-            System.out.println(faceUpValue + " " + diceQuantity +"'s");
+            faceUpValue = playerFaceUpValueBid;
+            System.out.println(diceQuantity  + " / " + faceUpValue +"'s");
         }
         else {
-            System.out.println("Bid is not valid, bid: number of dice: ");
+            System.out.println("Bid is not valid, submit new bid: number of dice: ");
             playerDiceQuantityBid = scanner.nextInt();
-            System.out.println("Bid is not valid, bid: face up value: ");
+            System.out.println("Bid is not valid, submit new bid: face up value: ");
             playerFaceUpValueBid = scanner.nextInt();
         }
+        // todo: complete validation of dice values - need to clarify what this needs to be
 
 
 
