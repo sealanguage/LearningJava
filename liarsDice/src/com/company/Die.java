@@ -23,4 +23,8 @@ public class Die {
         return faceUpValue;
     }
 
+    // public void removeDie() {
+        //  remove a die
+    //  }
+
 }
