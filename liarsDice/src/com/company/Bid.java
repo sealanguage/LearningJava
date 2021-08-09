@@ -10,25 +10,18 @@ public class Bid {
     public int playerDiceQuantityBid = 0;
     public int playerFaceUpValueBid = 0;
 
+
+//    public void bid(String playerName) {
+//        inputBid(getPlayerName(playerName));
+//
+//        if (playerDiceQuantityBid < diceQuantity || playerDiceQuantityBid > 5) {
+//            System.out.println("Invalid bid. Bid again between 1 and 5");
+//        }
+//
+//    }
+
     public void bid(String playerName) {
         inputBid(getPlayerName(playerName));
-
-            if (playerFaceUpValueBid > faceUpValue && playerDiceQuantityBid > diceQuantity) {
-            System.out.println("Bid is valid");
-            // make valid bid become current faceUpValue and diceQuantity
-            diceQuantity = playerDiceQuantityBid;
-            faceUpValue = playerFaceUpValueBid;
-            System.out.println(diceQuantity  + " / " + faceUpValue +"'s");
-        }
-            else {
-            System.out.println("Bid is not valid, submit new bid: number of dice: ");
-            playerDiceQuantityBid = scanner.nextInt();
-            System.out.println("Bid is not valid, submit new bid: face up value: ");
-            playerFaceUpValueBid = scanner.nextInt();
-        }
-
-        // todo: complete validation of dice values - need to clarify what this needs to be
-
     }
 
     public String getPlayerName(String playerName) {
@@ -39,15 +32,52 @@ public class Bid {
         System.out.println("Make a bid: number of dice: ");
         playerDiceQuantityBid = scanner.nextInt();
         //todo: make number of dice equal the number of dice in player's cup
-        if (playerDiceQuantityBid < 1 || playerDiceQuantityBid > 6) {
-            System.out.println("Invalid");
+        while (playerDiceQuantityBid < 1 || playerDiceQuantityBid > 6) {
+            System.out.println("Invalid bid again dice quantity: ");
+            playerDiceQuantityBid = scanner.nextInt();
         }
+        diceQuantity = playerDiceQuantityBid;
+        System.out.println("new dice quantity: " + diceQuantity);
+
         System.out.println("Make a bid face up value of dice: ");
         playerFaceUpValueBid = scanner.nextInt();
-        if (playerFaceUpValueBid < 1 || playerFaceUpValueBid > 6) {
+        while (playerFaceUpValueBid < 1 || playerFaceUpValueBid > 6) {
             System.out.println("Invalid");
+            System.out.println("Invalid bid new face up value: ");
+            playerFaceUpValueBid = scanner.nextInt();
         }
+        faceUpValue = playerFaceUpValueBid;
+
         System.out.println(getPlayerName(playerName) + "'s bid is: " + playerDiceQuantityBid + " / " + playerFaceUpValueBid + "'s");
+        System.out.println("new dice quantity is " + diceQuantity + ", new faceUpValue is " + faceUpValue);
+
     }
 }
+
+
+
+
+//        //            if (playerDiceQuantityBid > diceQuantity && playerFaceUpValueBid > faceUpValue) {
+//        while (playerDiceQuantityBid < diceQuantity || playerDiceQuantityBid > 5) {
+//            System.out.println("Bid is not valid, submit new number of dice bid: ");
+//            playerDiceQuantityBid = scanner.nextInt();
+//            System.out.println("playerDiceQuantityBid: " + playerDiceQuantityBid);
+//            // make valid bid become current faceUpValue and diceQuantity
+////            diceQuantity = playerDiceQuantityBid;
+////            faceUpValue = playerFaceUpValueBid;
+////            System.out.println("Current bid is: " + diceQuantity  + " / " + faceUpValue +"'s");
+//        }
+//        while (playerFaceUpValueBid < faceUpValue || playerFaceUpValueBid > 6) {
+//            System.out.println("Bid is not valid, submit new face up value bid: ");
+//            playerDiceQuantityBid = scanner.nextInt();
+//            System.out.println("playerDiceQuantityBid: " + playerDiceQuantityBid);
+////            System.out.println("Bid is not valid, submit new bid: face up value: ");
+////            playerFaceUpValueBid = scanner.nextInt();
+//            System.out.println("playerFaceUpValueBid: " + playerFaceUpValueBid);
+//        }
+
+        // todo: complete validation of dice values - need to clarify what this needs to be
+
+
+
 

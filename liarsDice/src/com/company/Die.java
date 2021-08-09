@@ -21,6 +21,7 @@ public class Die {
     public int roll() {
         faceUpValue = (int) ((Math.random() * numberOfSides) +1);
         return faceUpValue;
+
     }
 
     // public void removeDie() {
