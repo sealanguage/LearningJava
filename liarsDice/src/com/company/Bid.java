@@ -42,7 +42,7 @@ public class Bid {
         System.out.println("Make a bid face up value of dice: ");
         playerFaceUpValueBid = scanner.nextInt();
         while (playerFaceUpValueBid < 1 || playerFaceUpValueBid > 6) {
-            System.out.println("Invalid");
+//            System.out.println("Invalid");
             System.out.println("Invalid bid new face up value: ");
             playerFaceUpValueBid = scanner.nextInt();
         }

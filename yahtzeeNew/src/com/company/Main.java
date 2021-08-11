@@ -7,15 +7,24 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
 
-        Cup myCup = new Cup();
-        myCup.roll();
-        System.out.println(myCup.displayCup());
-        myCup.roll();
-        System.out.println(myCup.displayCup());
-        myCup.roll();
-        System.out.println(myCup.displayCup());
-        myCup.roll();
-        System.out.println(myCup.displayCup());
+        Yahtzee game = new Yahtzee();
+        game.play();
+
+//        Player will = new Player("Will");
+//        will.cup.roll();
+//        System.out.println(will.cup.displayCup());
+//        System.out.println(will.updateScore());
+//        System.out.println(will.score);
+//        will.cup.roll();
+//        System.out.println(will.cup.displayCup());
+//        System.out.println(will.updateScore());
+//        System.out.println(will.score);
+
+//        System.out.println(will.cup.displayCup());
+
+
+    }
+
 
 
 
@@ -37,9 +46,9 @@ public class Main {
 //
 //        System.out.println(die.faceUpValue);
 
-    }
-
-
+//    }
+//
+//
 }
 
 // how to get random numbers using Math.random
