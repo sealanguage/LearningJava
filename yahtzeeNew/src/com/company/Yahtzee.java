@@ -15,7 +15,7 @@ public class Yahtzee {
         player = new Player((scanner.nextLine()).trim());
     }
 
-    // todo refactor play to run 5 turns then display total score
+    // todo refactor play to run 5 turns then display total score DONE
     public void play() {
 
         for (int playTurn = 0; playTurn < 3; playTurn++) {
@@ -32,7 +32,7 @@ public class Yahtzee {
         String input = scanner.nextLine();
         player.cup.roll(player.cup.parseSelections(input));
     }
-// todo refactor turn() to update score and display round score
+// todo refactor turn() to update score and display round score DONE
     public void turn( ) {
         player.cup.roll();
 
