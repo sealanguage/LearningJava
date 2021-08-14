@@ -13,9 +13,19 @@ public class Player {
         String playerName = scanner.nextLine();
         System.out.println(playerName);
 
-        System.out.println(cup());
-        Bid bid = new Bid();
-        bid.bid(playerName);
+        int rounds = 1;
+
+        while (rounds < 4) {
+            System.out.println(cup());
+            Bid bid = new Bid();
+            bid.bid(playerName);
+
+            System.out.println("Running rounds " + rounds);
+            rounds += 1;
+        }
+//        System.out.println(cup());
+//        Bid bid = new Bid();
+//        bid.bid(playerName);
 
         // todo: add rounds here so player can play multiple rounds
         // todo: need to display dice roll for each round

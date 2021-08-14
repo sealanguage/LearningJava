@@ -10,7 +10,15 @@ public class Main {
 //        System.out.println("What is your name?");
 //        String playerName = scanner.nextLine();
 
-        Player player = new Player();
+        Player player1 = new Player();
+        Player player2 = new Player();
+
+//        int rounds = 0;
+//
+//        while (rounds < 3) {
+//            System.out.println("Running rounds " + rounds);
+//            rounds += 1;
+//        }
 
 
 
