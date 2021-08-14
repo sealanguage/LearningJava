@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Player {
     public String playerName;
-    public Cup myCup = new Cup();   //  instantiating a cup called myCUp
+    public Cup cup = new Cup();   //  instantiating a cup called myCUp
     Scanner scanner = new Scanner(System.in);
 
-    // this is the constructor overridig the default constructor
+    // this is the constructor overriding the default constructor
     public Player() {
         System.out.println("What is your name?");
         String playerName = scanner.nextLine();
@@ -16,11 +16,14 @@ public class Player {
         System.out.println(cup());
         Bid bid = new Bid();
         bid.bid(playerName);
+
+        // todo: add rounds here so player can play multiple rounds
+        // todo: need to display dice roll for each round
     }
 
     public String cup() {
-        myCup.roll();
-        return myCup.displayCup();
+        cup.roll();
+        return cup.displayCup();
     }
 }
 

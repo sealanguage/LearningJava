@@ -33,7 +33,7 @@ public class Yahtzee {
         player.cup.roll(player.cup.parseSelections(input));
     }
 // todo refactor turn() to update score and display round score DONE
-    public void turn( ) {
+    public void turn() {
         player.cup.roll();
 
         for (int i = 0; i < 2; i++) {

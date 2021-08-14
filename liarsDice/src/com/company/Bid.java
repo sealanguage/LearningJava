@@ -10,6 +10,7 @@ public class Bid {
     public int playerDiceQuantityBid = 0;
     public int playerFaceUpValueBid = 0;
 
+    public int rounds = 0;
 
 //    public void bid(String playerName) {
 //        inputBid(getPlayerName(playerName));
@@ -28,28 +29,42 @@ public class Bid {
         return playerName;
     }
 
+
     public void inputBid(String playerName) {
         System.out.println("Make a bid: number of dice: ");
         playerDiceQuantityBid = scanner.nextInt();
-        //todo: make number of dice equal the number of dice in player's cup
-        while (playerDiceQuantityBid < 1 || playerDiceQuantityBid > 6) {
-            System.out.println("Invalid bid again dice quantity: ");
-            playerDiceQuantityBid = scanner.nextInt();
-        }
-        diceQuantity = playerDiceQuantityBid;
-        System.out.println("new dice quantity: " + diceQuantity);
 
-        System.out.println("Make a bid face up value of dice: ");
-        playerFaceUpValueBid = scanner.nextInt();
-        while (playerFaceUpValueBid < 1 || playerFaceUpValueBid > 6) {
-//            System.out.println("Invalid");
-            System.out.println("Invalid bid new face up value: ");
+        // todo: rounds should be in player class to run multiple rounds, revert the rest back to previous
+//        while (rounds < 3) {
+//            System.out.println("Running rounds " + rounds);
+//            rounds += 1;
+//            System.out.println("Running rounds " + rounds);
+//        }
+
+
+            //todo: make number of dice equal the number of dice in player's cup
+            while (playerDiceQuantityBid < 1 || playerDiceQuantityBid > 6) {
+                System.out.println("Invalid bid again dice quantity: ");
+                playerDiceQuantityBid = scanner.nextInt();
+            }
+            diceQuantity = playerDiceQuantityBid;
+            System.out.println("dice quantity bid is: " + diceQuantity);
+
+            System.out.println("Make a bid face up value of dice: ");
             playerFaceUpValueBid = scanner.nextInt();
-        }
-        faceUpValue = playerFaceUpValueBid;
+            while (playerFaceUpValueBid < 1 || playerFaceUpValueBid > 6) {
+    //            System.out.println("Invalid");
+                System.out.println("Invalid, Bid again face up value: ");
+                playerFaceUpValueBid = scanner.nextInt();
+            }
+            faceUpValue = playerFaceUpValueBid;
+            System.out.println("face up value bid is: " + faceUpValue);
+
+
+
 
         System.out.println(getPlayerName(playerName) + "'s bid is: " + playerDiceQuantityBid + " / " + playerFaceUpValueBid + "'s");
-        System.out.println("new dice quantity is " + diceQuantity + ", new faceUpValue is " + faceUpValue);
+        System.out.println("CHECK: dice quantity bid is: " + diceQuantity + ", faceUpValue bid is: " + faceUpValue);
 
     }
 }
