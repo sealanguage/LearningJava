@@ -1,6 +1,8 @@
 package com.company;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+
 
 public class Main {
 
@@ -13,17 +15,7 @@ public class Main {
         Player player1 = new Player();
         Player player2 = new Player();
 
-//        int rounds = 0;
-//
-//        while (rounds < 3) {
-//            System.out.println("Running rounds " + rounds);
-//            rounds += 1;
-//        }
-
-
-
-
-
+        List<String> list = new ArrayList<Player>();
 
 
 

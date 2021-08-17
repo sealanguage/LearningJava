@@ -57,7 +57,7 @@ public class Yahtzee {
 
     public void play() {
         for (int count = 0; count < ROUND; count++) {
-            roud();
+            round();
         }
         displayResults();
 //        System.out.println(activePlayer.score);
