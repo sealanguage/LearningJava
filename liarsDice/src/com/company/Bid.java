@@ -61,8 +61,6 @@ public class Bid {
             System.out.println("face up value bid is: " + faceUpValue);
 
 
-
-
         System.out.println(getPlayerName(playerName) + "'s bid is: " + playerDiceQuantityBid + " / " + playerFaceUpValueBid + "'s");
         System.out.println("CHECK: dice quantity bid is: " + diceQuantity + ", faceUpValue bid is: " + faceUpValue);
 

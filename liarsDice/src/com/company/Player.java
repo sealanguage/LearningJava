@@ -14,14 +14,12 @@ public class Player {
         System.out.println(playerName);
 
         int rounds = 1;
-
         while (rounds < 4) {
-            System.out.println("Running rounds " + rounds);
             System.out.println(cup());
             Bid bid = new Bid();
             bid.bid(playerName);
 
-
+            System.out.println("Running rounds " + rounds);
             rounds += 1;
         }
 //        System.out.println(cup());
