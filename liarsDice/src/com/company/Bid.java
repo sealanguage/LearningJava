@@ -31,7 +31,7 @@ public class Bid {
 
 
     public void inputBid(String playerName) {
-        System.out.println("Make a bid: number of dice: ");
+        System.out.println(playerName + " Make a bid: number of dice: ");
         playerDiceQuantityBid = scanner.nextInt();
 
         // todo: rounds should be in player class to run multiple rounds, revert the rest back to previous

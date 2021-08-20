@@ -81,7 +81,7 @@ public class Yahtzee {
         }
 
         System.out.println(activePlayer.cup.displayCup());
-        System.out.println("%s scores", activePlayer.name);
+//        System.out.println("%s scores", activePlayer.name);
         System.out.println(activePlayer.updateScore());
 
     }
