@@ -23,5 +23,11 @@ public class Main {
         Date now = new Date();    //  new operator allocates memory for this data type, always allocate memory for ref types
         System.out.println("time " + now.getTime());  //  prints nuber of milliseconds since Jan 1 1970 00:00:00 GMT
 
+        String message = "Hello World" + "!!";
+
+        System.out.println(message.length());
+        System.out.println(message);
+        System.out.println(message.endsWith("!!"));
+
     }
 }
