@@ -9,20 +9,20 @@ import java.util.Scanner;
 public class CheatersDeck {
     private final Scanner scanner = new Scanner(System.in);
 
-    public final String[] SUITS = new String[] {
+    private final List<Card> cards = new ArrayList<>();
+    final private String[] SUITS =  {
             "Clubs", "Hearts", "Diamonds", "Spades"
     };
-    public final String[] VALUES = new String[] {
-            "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"
-    };
+    final private int[] VALUES = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
 
 //    @Override
     public void shuffle() {
+        return;
     }
 
 //    @Override
-    public Card deal() {
+    public Card draw() {
         System.out.println(Arrays.toString(SUITS));
         System.out.println("Which Suit? (1-4)");
         int suitIndex;

@@ -21,12 +21,12 @@ public class Card {
 
             default -> output = value == 10 ? Integer.toString(value) : " " + value;
         }
-        return output + suit;
+        return output + " of " + suit;
 
     }
 
     public String toString() {
-        return suit + " " + value;
+        return value + " of " + suit;
     }
 
 }
