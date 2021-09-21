@@ -38,9 +38,9 @@ public class HiLowGame {
 
         }
         card1 = card2;
-        System.out.printf("Do you want to stop playing? (y/n)");
+        System.out.printf("Do you want to keep playing? (y/n)");
         String quitGame =  scanner.nextLine();
-        if (quitGame.toLowerCase().equals("y")) {
+        if (quitGame.toLowerCase().equals("n")) {
             System.exit(200);
         }
     }
